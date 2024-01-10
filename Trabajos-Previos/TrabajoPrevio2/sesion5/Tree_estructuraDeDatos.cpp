@@ -42,3 +42,21 @@ void inorderTraversal(struct Node* node) {
     cout << node->data << "->";
     inorderTraversal(node->right);
 }
+int main() {
+    struct Node* root = new Node(1);
+    root->left = new Node(12);
+    root->right = new Node(9);
+    root->left->left = new Node(5);
+    root->left->right = new Node(6);
+
+    cout << "Inorder traversal: ";
+    inorderTraversal(root);
+
+    cout << "\nPreorder traversal: ";
+    preorderTraversal(root);
+
+    cout << "\nPostorder traversal: ";
+    postorderTraversal(root);
+
+    return 0;
+}
