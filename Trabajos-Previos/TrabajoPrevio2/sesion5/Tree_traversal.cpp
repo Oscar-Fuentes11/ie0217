@@ -22,3 +22,23 @@ void preorderTraversal(struct Node* node) {
     preorderTraversal(node->left);
     preorderTraversal(node->right);
 }
+// Postorder traversal
+void postorderTraversal(struct Node* node) {
+    if (node == NULL)
+        return;
+
+    postorderTraversal(node->left);
+    postorderTraversal(node->right);
+
+    cout << node->data << "->";
+}
+
+// Inorder traversal
+void inorderTraversal(struct Node* node) {
+    if (node == NULL)
+        return;
+
+    inorderTraversal(node->left);
+    cout << node->data << "->";
+    inorderTraversal(node->right);
+}
