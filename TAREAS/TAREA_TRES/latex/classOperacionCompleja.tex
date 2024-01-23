@@ -1,0 +1,119 @@
+\hypertarget{classOperacionCompleja}{}\doxysection{Operacion\+Compleja$<$ T $>$ Class Template Reference}
+\label{classOperacionCompleja}\index{OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}}
+
+
+Clase de utilidad para realizar operaciones con matrices de números complejos.  
+
+
+
+
+{\ttfamily \#include $<$Operacion\+Compleja.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classOperacionCompleja_af6e90235783e31eb2f4336eba711adcc}{sumar\+Complejas}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Realiza la suma de dos matrices de números complejos. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classOperacionCompleja_a802e918c8ab07f9c55f0772ef371afa1}{restar\+Complejas}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Realiza la resta de dos matrices de números complejos. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classOperacionCompleja_a7c0b109d745d2ce5c35c4988b819d453}{multiplicar\+Complejas}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Realiza la multiplicación de dos matrices de números complejos. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Operacion\+Compleja$<$ T $>$}
+
+Clase de utilidad para realizar operaciones con matrices de números complejos. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de dato de los elementos de las matrices de números complejos. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOperacionCompleja_a7c0b109d745d2ce5c35c4988b819d453}\label{classOperacionCompleja_a7c0b109d745d2ce5c35c4988b819d453}} 
+\index{OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}!multiplicarComplejas@{multiplicarComplejas}}
+\index{multiplicarComplejas@{multiplicarComplejas}!OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{multiplicarComplejas()}{multiplicarComplejas()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classOperacionCompleja}{Operacion\+Compleja}}$<$ T $>$\+::multiplicar\+Complejas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Realiza la multiplicación de dos matrices de números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la multiplicación. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones de las matrices no permiten la multiplicación. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classOperacionCompleja_a802e918c8ab07f9c55f0772ef371afa1}\label{classOperacionCompleja_a802e918c8ab07f9c55f0772ef371afa1}} 
+\index{OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}!restarComplejas@{restarComplejas}}
+\index{restarComplejas@{restarComplejas}!OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{restarComplejas()}{restarComplejas()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classOperacionCompleja}{Operacion\+Compleja}}$<$ T $>$\+::restar\+Complejas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Realiza la resta de dos matrices de números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la resta. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones de las matrices no permiten la resta. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classOperacionCompleja_af6e90235783e31eb2f4336eba711adcc}\label{classOperacionCompleja_af6e90235783e31eb2f4336eba711adcc}} 
+\index{OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}!sumarComplejas@{sumarComplejas}}
+\index{sumarComplejas@{sumarComplejas}!OperacionCompleja$<$ T $>$@{OperacionCompleja$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{sumarComplejas()}{sumarComplejas()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classOperacionCompleja}{Operacion\+Compleja}}$<$ T $>$\+::sumar\+Complejas (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Realiza la suma de dos matrices de números complejos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la suma. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones de las matrices no permiten la suma. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Programa1/\mbox{\hyperlink{OperacionCompleja_8hpp}{Operacion\+Compleja.\+hpp}}\end{DoxyCompactItemize}

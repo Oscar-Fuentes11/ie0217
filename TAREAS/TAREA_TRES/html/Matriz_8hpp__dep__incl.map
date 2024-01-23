@@ -1,0 +1,6 @@
+<map id="src/Programa1/Matriz.hpp" name="src/Programa1/Matriz.hpp">
+<area shape="rect" id="node1" title="Definición de la clase Matriz y sus operadores." alt="" coords="69,5,258,32"/>
+<area shape="rect" id="node2" href="$Programa1_2main_8cpp.html" title="Programa principal que realiza operaciones con matrices y números complejos." alt="" coords="74,169,254,196"/>
+<area shape="rect" id="node3" href="$OperacionCompleja_8hpp.html" title="Clase de utilidad para realizar operaciones con matrices de números complejos." alt="" coords="26,87,302,114"/>
+<area shape="rect" id="node4" href="$OperacionesBasicas_8hpp.html" title="Clase de utilidad para realizar operaciones básicas con matrices." alt="" coords="326,80,527,121"/>
+</map>

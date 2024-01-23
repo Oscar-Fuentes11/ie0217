@@ -1,0 +1,165 @@
+\hypertarget{classOperacionesBasicas}{}\doxysection{Operaciones\+Basicas$<$ T $>$ Class Template Reference}
+\label{classOperacionesBasicas}\index{OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}}
+
+
+Clase de utilidad para realizar operaciones básicas con matrices.  
+
+
+
+
+{\ttfamily \#include $<$Operaciones\+Basicas.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classOperacionesBasicas_a94effc2bb073ff6d8fc96dc741a9113b}{suma}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Realiza la suma de dos matrices. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classOperacionesBasicas_a7b418d7224f6431fdfd810c263bb1c49}{resta}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Realiza la resta de dos matrices. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classOperacionesBasicas_a126db4b5c3367dd48684590c954dd2af}{multiplicacion}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Realiza la multiplicación de dos matrices. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classOperacionesBasicas_a488a17aea0bae5e70d0d3acb0af49829}{validar\+Suma\+Resta}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Valida si las dimensiones de dos matrices permiten la suma o la resta. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classOperacionesBasicas_a0df393ee54e284137501f51fae32ca97}{validar\+Multiplicacion}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&a, const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&b)
+\begin{DoxyCompactList}\small\item\em Valida si las dimensiones de dos matrices permiten la multiplicación. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Operaciones\+Basicas$<$ T $>$}
+
+Clase de utilidad para realizar operaciones básicas con matrices. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de dato de los elementos de las matrices. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOperacionesBasicas_a126db4b5c3367dd48684590c954dd2af}\label{classOperacionesBasicas_a126db4b5c3367dd48684590c954dd2af}} 
+\index{OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}!multiplicacion@{multiplicacion}}
+\index{multiplicacion@{multiplicacion}!OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{multiplicacion()}{multiplicacion()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classOperacionesBasicas}{Operaciones\+Basicas}}$<$ T $>$\+::multiplicacion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Realiza la multiplicación de dos matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la multiplicación. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones de las matrices no permiten la multiplicación. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classOperacionesBasicas_a7b418d7224f6431fdfd810c263bb1c49}\label{classOperacionesBasicas_a7b418d7224f6431fdfd810c263bb1c49}} 
+\index{OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}!resta@{resta}}
+\index{resta@{resta}!OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{resta()}{resta()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classOperacionesBasicas}{Operaciones\+Basicas}}$<$ T $>$\+::resta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Realiza la resta de dos matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la resta. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones de las matrices no permiten la resta. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classOperacionesBasicas_a94effc2bb073ff6d8fc96dc741a9113b}\label{classOperacionesBasicas_a94effc2bb073ff6d8fc96dc741a9113b}} 
+\index{OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}!suma@{suma}}
+\index{suma@{suma}!OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{suma()}{suma()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classOperacionesBasicas}{Operaciones\+Basicas}}$<$ T $>$\+::suma (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Realiza la suma de dos matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la suma. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones de las matrices no permiten la suma. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classOperacionesBasicas_a0df393ee54e284137501f51fae32ca97}\label{classOperacionesBasicas_a0df393ee54e284137501f51fae32ca97}} 
+\index{OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}!validarMultiplicacion@{validarMultiplicacion}}
+\index{validarMultiplicacion@{validarMultiplicacion}!OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{validarMultiplicacion()}{validarMultiplicacion()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static bool \mbox{\hyperlink{classOperacionesBasicas}{Operaciones\+Basicas}}$<$ T $>$\+::validar\+Multiplicacion (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Valida si las dimensiones de dos matrices permiten la multiplicación. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las dimensiones son compatibles, false en caso contrario. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classOperacionesBasicas_a488a17aea0bae5e70d0d3acb0af49829}\label{classOperacionesBasicas_a488a17aea0bae5e70d0d3acb0af49829}} 
+\index{OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}!validarSumaResta@{validarSumaResta}}
+\index{validarSumaResta@{validarSumaResta}!OperacionesBasicas$<$ T $>$@{OperacionesBasicas$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{validarSumaResta()}{validarSumaResta()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static bool \mbox{\hyperlink{classOperacionesBasicas}{Operaciones\+Basicas}}$<$ T $>$\+::validar\+Suma\+Resta (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{a,  }\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Valida si las dimensiones de dos matrices permiten la suma o la resta. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & \mbox{\hyperlink{classMatriz}{Matriz}} A. \\
+\hline
+{\em b} & \mbox{\hyperlink{classMatriz}{Matriz}} B. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si las dimensiones son compatibles, false en caso contrario. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Programa1/\mbox{\hyperlink{OperacionesBasicas_8hpp}{Operaciones\+Basicas.\+hpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,46 @@
+\label{index_md_README}%
+\Hypertarget{index_md_README}%
+ \hypertarget{index_autotoc_md1}{}\doxysection{Ejecutar Programa 1 (\+Operaciones con Matrices) y 2 (\+Validación de Correo Electrónico)}\label{index_autotoc_md1}
+Ubícate en el directorio donde está el {\ttfamily Makefile} y ejecuta el siguiente comando en la terminal para compilar y ejecutar el programa 1 que se encuentra en {\ttfamily src/\+Programa1}\+:
+
+make programa1
+
+Ubícate en el directorio donde está el {\ttfamily Makefile} y ejecuta el siguiente comando en la terminal para compilar y ejecutar el programa 2 que se encuentra en {\ttfamily src/\+Programa2}\+:
+
+make programa2
+
+Para eliminar los archivos binarios de ambos programas puedes utilizar el comando make clean.\hypertarget{index_autotoc_md2}{}\doxysection{Parte Teórica (15 pts)}\label{index_autotoc_md2}
+\hypertarget{index_autotoc_md3}{}\doxysubsection{Templates}\label{index_autotoc_md3}
+\hypertarget{index_autotoc_md4}{}\doxysubsubsection{1. Definición de Templates}\label{index_autotoc_md4}
+Los templates en C++ son plantillas para escribir código genérico. Permiten a las funciones o clases operar con diferentes tipos de datos.
+
+template $<$typename T$>$ T suma(\+T a, T b) \{ return a + b; \}\hypertarget{index_autotoc_md5}{}\doxysubsubsection{2. Sobrecarga de Plantillas}\label{index_autotoc_md5}
+La sobrecarga en plantillas permite definir varias funciones con el mismo nombre pero diferentes implementaciones, dependiendo de los tipos de parámetros.
+
+template $<$typename T$>$ T mayor(\+T a, T b) \{ return (a $>$ b) ? a \+: b; \}
+
+template $<$typename T$>$ T mayor(\+T a, T b, T c) \{ return mayor(mayor(a, b), c); \}\hypertarget{index_autotoc_md6}{}\doxysubsubsection{3. Plantillas de Clases}\label{index_autotoc_md6}
+Las plantillas de clases permiten definir una clase para trabajar con cualquier tipo de dato, especificado al instanciar la clase.
+
+template $<$typename T$>$ class Mi\+Contenedor \{ public\+: Mi\+Contenedor(\+T valor) \+: dato(valor) \{\} T obtener\+Dato() \{ return dato; \}
+
+private\+: T dato; \};\hypertarget{index_autotoc_md7}{}\doxysubsection{Excepciones}\label{index_autotoc_md7}
+\hypertarget{index_autotoc_md8}{}\doxysubsubsection{4. Manejo de Excepciones}\label{index_autotoc_md8}
+El manejo de excepciones en C++ utiliza bloques {\ttfamily try}, {\ttfamily catch} y {\ttfamily throw} para capturar y manejar errores de forma segura.
+
+try \{ // Código que puede generar una excepción if (condicion) \{ throw Mi\+Excepcion(\char`\"{}\+Mensaje de error\char`\"{}); \} \} catch (const Mi\+Excepcion\& e) \{ // Manejo de la excepción cout $<$$<$ \char`\"{}\+Excepción capturada\+: \char`\"{} $<$$<$ e.\+what() $<$$<$ endl; \}\hypertarget{index_autotoc_md9}{}\doxysubsubsection{5. Excepciones Estándar}\label{index_autotoc_md9}
+Algunas excepciones estándar en C++ son std\+::runtime\+\_\+error, std\+::invalid\+\_\+argument, y std\+::out\+\_\+of\+\_\+range. Ejemplos de uso incluyen el manejo de errores en tiempo de ejecución, argumentos inválidos y desbordamiento de índices.\hypertarget{index_autotoc_md10}{}\doxysubsubsection{6. Política de Manejo de Excepciones}\label{index_autotoc_md10}
+Una política de manejo de excepciones define cómo manejar y propagar excepciones en un programa. Es importante considerarla al diseñar software para garantizar un comportamiento robusto y predecible frente a errores.\hypertarget{index_autotoc_md11}{}\doxysubsubsection{7. Noexcept}\label{index_autotoc_md11}
+La palabra clave noexcept se usa en C++ para especificar que una función no debe lanzar excepciones. Puede usarse en la declaración de una función o en una lambda para indicar que no se producirán excepciones dentro de esa función o lambda.\hypertarget{index_autotoc_md12}{}\doxysubsection{STL (\+Standard Template Library)}\label{index_autotoc_md12}
+\hypertarget{index_autotoc_md13}{}\doxysubsubsection{8. Contenedores STL}\label{index_autotoc_md13}
+Cinco contenedores de la STL son vector, list, map, set, y queue. Se usan en diferentes situaciones\+: vector para almacenamiento dinámico, list para listas enlazadas, map y set para asociaciones clave-\/valor, y queue para colas.\hypertarget{index_autotoc_md14}{}\doxysubsubsection{9. Iteradores en STL}\label{index_autotoc_md14}
+Los iteradores en STL son objetos que permiten recorrer los elementos de un contenedor.\+Pueden usarse para acceder, modificar o eliminar elementos. Por ejemplo, un vector$<$int$>$\+::iterator se utiliza para recorrer un vector de enteros.\hypertarget{index_autotoc_md15}{}\doxysubsubsection{10. Algoritmos STL}\label{index_autotoc_md15}
+Ejemplos de algoritmos STL incluyen std\+::sort para ordenar, std\+::find para buscar elementos y std\+::transform para aplicar una función a cada elemento en un rango.\hypertarget{index_autotoc_md16}{}\doxysubsubsection{11. Algoritmos Personalizados}\label{index_autotoc_md16}
+Los algoritmos personalizados pueden utilizarse en conjunto con contenedores STL para operaciones más específicas.\hypertarget{index_autotoc_md17}{}\doxysubsection{Expresiones Regulares}\label{index_autotoc_md17}
+\hypertarget{index_autotoc_md18}{}\doxysubsubsection{12. Definición de Expresiones Regulares}\label{index_autotoc_md18}
+Las expresiones regulares son patrones de texto utilizados para buscar, extraer y manipular cadenas de caracteres. Un ejemplo simple sería la expresión regular para encontrar direcciones de correo electrónico\+: $^\wedge$\mbox{[}a-\/z\+A-\/\+Z0-\/9.\+\_\+\%+-\/\mbox{]}+@\mbox{[}a-\/z\+A-\/\+Z0-\/9.-\/\mbox{]}+.\mbox{[}a-\/z\+A-\/Z\mbox{]}\{2,\}\$.\hypertarget{index_autotoc_md19}{}\doxysubsubsection{13. Caracteres Especiales}\label{index_autotoc_md19}
+Tres caracteres especiales comunes en expresiones regulares son\+:
+
+.\+: Coincide con cualquier carácter excepto el salto de línea. $\ast$\+: Coincide con cero o más repeticiones del elemento anterior. +\+: Coincide con una o más repeticiones del elemento anterior.\hypertarget{index_autotoc_md20}{}\doxysubsubsection{14. Uso de Expresiones Regulares en C++}\label{index_autotoc_md20}
+En C++, se pueden usar expresiones regulares a través de la biblioteca $<$regex$>$. Se pueden crear objetos std\+::regex, utilizar std\+::regex\+\_\+match, y otros métodos para buscar y validar patrones en cadenas de texto.\hypertarget{index_autotoc_md21}{}\doxysubsubsection{15. Validación de Patrones}\label{index_autotoc_md21}
+Las expresiones regulares son útiles para validar patrones en cadenas de texto porque permiten verificar si una cadena cumple con un formato específico, como direcciones de correo electrónico o números de teléfono. Facilitan la validación y extracción de datos de manera eficiente. 

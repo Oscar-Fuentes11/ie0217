@@ -1,0 +1,50 @@
+\hypertarget{classEmailValidator}{}\doxysection{Email\+Validator Class Reference}
+\label{classEmailValidator}\index{EmailValidator@{EmailValidator}}
+
+
+Clase para validar direcciones de correo electrónico.  
+
+
+
+
+{\ttfamily \#include $<$Email\+Validator.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classEmailValidator_a2b5824dbed0eb8ee02537cf3016a36b1}{validar\+Correo}} (const std\+::string \&email, std\+::string \&mensaje\+Error)
+\begin{DoxyCompactList}\small\item\em Valida una dirección de correo electrónico. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Clase para validar direcciones de correo electrónico. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEmailValidator_a2b5824dbed0eb8ee02537cf3016a36b1}\label{classEmailValidator_a2b5824dbed0eb8ee02537cf3016a36b1}} 
+\index{EmailValidator@{EmailValidator}!validarCorreo@{validarCorreo}}
+\index{validarCorreo@{validarCorreo}!EmailValidator@{EmailValidator}}
+\doxysubsubsection{\texorpdfstring{validarCorreo()}{validarCorreo()}}
+{\footnotesize\ttfamily bool Email\+Validator\+::validar\+Correo (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{email,  }\item[{std\+::string \&}]{mensaje\+Error }\end{DoxyParamCaption})}
+
+
+
+Valida una dirección de correo electrónico. 
+
+Esta función utiliza expresiones regulares para validar una dirección de correo electrónico.
+
+
+\begin{DoxyParams}{Parameters}
+{\em email} & La dirección de correo electrónico a validar. \\
+\hline
+{\em mensaje\+Error} & El mensaje de error se establece si la dirección es inválida. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true si la dirección de correo es válida, false si es inválida. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Programa2/\mbox{\hyperlink{EmailValidator_8hpp}{Email\+Validator.\+hpp}}\item 
+src/\+Programa2/\mbox{\hyperlink{EmailValidator_8cpp}{Email\+Validator.\+cpp}}\end{DoxyCompactItemize}

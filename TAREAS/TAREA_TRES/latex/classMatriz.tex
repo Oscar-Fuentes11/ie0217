@@ -1,0 +1,213 @@
+\hypertarget{classMatriz}{}\doxysection{Matriz$<$ T $>$ Class Template Reference}
+\label{classMatriz}\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+
+
+Clase que representa una matriz genérica.  
+
+
+
+
+{\ttfamily \#include $<$Matriz.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMatriz_aaf573ec9eee84e31ac7b433ba4c1f6f6}{Matriz}} (int filas, int columnas)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \mbox{\hyperlink{classMatriz}{Matriz}}. \end{DoxyCompactList}\item 
+std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classMatriz_a636a6dcde1d79ef8603e2e70cdd9be09}{operator\mbox{[}$\,$\mbox{]}}} (int index)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \mbox{[}\mbox{]} para acceso a elementos de la matriz. \end{DoxyCompactList}\item 
+const std\+::vector$<$ T $>$ \& \mbox{\hyperlink{classMatriz_a8f254074da21a265e332171fac0a5dd5}{operator\mbox{[}$\,$\mbox{]}}} (int index) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador \mbox{[}\mbox{]} constante para acceso a elementos de la matriz. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classMatriz_a7253283e48f6d0726368289286b882f9}{operator+}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&otra) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador + para la suma de matrices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classMatriz_a79e39e6851b26ccb1374c4f9442fac2c}{operator-\/}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&otra) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador -\/ para la resta de matrices. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \mbox{\hyperlink{classMatriz_a69c22be89306003b68651591381f3af5}{operator$\ast$}} (const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&otra) const
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $\ast$ para la multiplicación de matrices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classMatriz_a787616bfb6a6841dce77d70c2f1fe6cf}\label{classMatriz_a787616bfb6a6841dce77d70c2f1fe6cf}} 
+void \mbox{\hyperlink{classMatriz_a787616bfb6a6841dce77d70c2f1fe6cf}{imprimir}} () const
+\begin{DoxyCompactList}\small\item\em Imprime la matriz en la consola. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatriz_aec0dbbec64397e24f4d3ca914e6563e3}{get\+Filas}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número de filas de la matriz. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMatriz_a6a79899e6830b0511445cec0defb0317}{get\+Columnas}} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el número de columnas de la matriz. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Matriz$<$ T $>$}
+
+Clase que representa una matriz genérica. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Tipo de dato de los elementos de la matriz. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMatriz_aaf573ec9eee84e31ac7b433ba4c1f6f6}\label{classMatriz_aaf573ec9eee84e31ac7b433ba4c1f6f6}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!Matriz@{Matriz}}
+\index{Matriz@{Matriz}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Matriz()}{Matriz()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::\mbox{\hyperlink{classMatriz}{Matriz}} (\begin{DoxyParamCaption}\item[{int}]{filas,  }\item[{int}]{columnas }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \mbox{\hyperlink{classMatriz}{Matriz}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filas} & Número de filas de la matriz. \\
+\hline
+{\em columnas} & Número de columnas de la matriz. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMatriz_a6a79899e6830b0511445cec0defb0317}\label{classMatriz_a6a79899e6830b0511445cec0defb0317}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!getColumnas@{getColumnas}}
+\index{getColumnas@{getColumnas}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getColumnas()}{getColumnas()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::get\+Columnas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de columnas de la matriz. 
+
+\begin{DoxyReturn}{Returns}
+Número de columnas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatriz_aec0dbbec64397e24f4d3ca914e6563e3}\label{classMatriz_aec0dbbec64397e24f4d3ca914e6563e3}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!getFilas@{getFilas}}
+\index{getFilas@{getFilas}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{getFilas()}{getFilas()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+int \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::get\+Filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de filas de la matriz. 
+
+\begin{DoxyReturn}{Returns}
+Número de filas. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatriz_a69c22be89306003b68651591381f3af5}\label{classMatriz_a69c22be89306003b68651591381f3af5}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador $\ast$ para la multiplicación de matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & \mbox{\hyperlink{classMatriz}{Matriz}} a multiplicar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la multiplicación. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones son incompatibles. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatriz_a7253283e48f6d0726368289286b882f9}\label{classMatriz_a7253283e48f6d0726368289286b882f9}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador + para la suma de matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & \mbox{\hyperlink{classMatriz}{Matriz}} a sumar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la suma. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones son incompatibles. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatriz_a79e39e6851b26ccb1374c4f9442fac2c}\label{classMatriz_a79e39e6851b26ccb1374c4f9442fac2c}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classMatriz}{Matriz}}$<$T$>$ \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$ \&}]{otra }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador -\/ para la resta de matrices. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em otra} & \mbox{\hyperlink{classMatriz}{Matriz}} a restar. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{classMatriz}{Matriz}} resultante de la resta. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & si las dimensiones son incompatibles. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classMatriz_a636a6dcde1d79ef8603e2e70cdd9be09}\label{classMatriz_a636a6dcde1d79ef8603e2e70cdd9be09}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+std\+::vector$<$T$>$\& \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador \mbox{[}\mbox{]} para acceso a elementos de la matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Índice de fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia a la fila de la matriz. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classMatriz_a8f254074da21a265e332171fac0a5dd5}\label{classMatriz_a8f254074da21a265e332171fac0a5dd5}} 
+\index{Matriz$<$ T $>$@{Matriz$<$ T $>$}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Matriz$<$ T $>$@{Matriz$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+const std\+::vector$<$T$>$\& \mbox{\hyperlink{classMatriz}{Matriz}}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sobrecarga del operador \mbox{[}\mbox{]} constante para acceso a elementos de la matriz. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Índice de fila. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Referencia constante a la fila de la matriz. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\+Programa1/\mbox{\hyperlink{Matriz_8hpp}{Matriz.\+hpp}}\end{DoxyCompactItemize}
