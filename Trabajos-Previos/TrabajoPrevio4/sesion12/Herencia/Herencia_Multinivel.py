@@ -15,6 +15,6 @@ class DerivedClass2(DerivedClass1):
 # create an object of DerivedClass2
 d2 = DerivedClass2()
 
-d2.super_method() # Output: "Super Class method called"
-d2.derived1_method() # Output: "Derived class 1 method called"
-d2.derived2_method() # Output: "Derived class 2 method called"
+d2.super_method() 
+d2.derived1_method() 
+d2.derived2_method() 
