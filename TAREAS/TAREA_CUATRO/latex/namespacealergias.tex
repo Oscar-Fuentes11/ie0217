@@ -1,0 +1,154 @@
+\hypertarget{namespacealergias}{}\doxysection{alergias Namespace Reference}
+\label{namespacealergias}\index{alergias@{alergias}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classalergias_1_1Alergia}{Alergia}}
+\item 
+class \mbox{\hyperlink{classalergias_1_1EvaluacionEspecifica}{Evaluacion\+Especifica}}
+\item 
+class \mbox{\hyperlink{classalergias_1_1TiposDeAlergias}{Tipos\+De\+Alergias}}
+\item 
+class \mbox{\hyperlink{classalergias_1_1EvaluacionGeneral}{Evaluacion\+General}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+def \mbox{\hyperlink{namespacealergias_aaa801060d7367c27c8bab085f75de365}{medir\+\_\+tiempo}} (func, $\ast$args)
+\item 
+def \mbox{\hyperlink{namespacealergias_ad117493f0f2c62303c5873e426764116}{perfilar}} (func, $\ast$args)
+\item 
+def \mbox{\hyperlink{namespacealergias_a42313947a232c57826c45abac0147fd8}{ingresar\+\_\+puntuacion\+\_\+general}} ()
+\item 
+def \mbox{\hyperlink{namespacealergias_a8b9b5e8de8e23f1309e1be71dbd53c55}{ingresar\+\_\+tipos\+\_\+alergias}} (tipos\+\_\+alergias, alergias\+\_\+conocidas)
+\item 
+def \mbox{\hyperlink{namespacealergias_a8eeae368cf56022cd49ec9813779272d}{agregar\+\_\+alergia}} ()
+\item 
+def \mbox{\hyperlink{namespacealergias_a00935776b12bf73bd84ae7b423237288}{es\+\_\+alergia\+\_\+reconocida}} (nombre, alergias\+\_\+conocidas)
+\item 
+def \mbox{\hyperlink{namespacealergias_ae73bdb391df3030991b5416f6cfb040e}{mostrar\+\_\+evaluaciones\+\_\+combinadas}} (puntuacion, alergias\+\_\+especificas, tipos\+\_\+alergias)
+\item 
+def \mbox{\hyperlink{namespacealergias_af782547f6d2454de03bffa43f69037b4}{main}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\begin{DoxyVerb}@file
+@brief Alergias y Evaluaciones
+@author Oscar Fuentes
+@date 27-01-2024
+@license [Licencia de Código Abierto]
+\end{DoxyVerb}
+ 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{namespacealergias_a8eeae368cf56022cd49ec9813779272d}\label{namespacealergias_a8eeae368cf56022cd49ec9813779272d}} 
+\index{alergias@{alergias}!agregar\_alergia@{agregar\_alergia}}
+\index{agregar\_alergia@{agregar\_alergia}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{agregar\_alergia()}{agregar\_alergia()}}
+{\footnotesize\ttfamily def alergias.\+agregar\+\_\+alergia (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función para agregar una nueva alergia al sistema.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_a00935776b12bf73bd84ae7b423237288}\label{namespacealergias_a00935776b12bf73bd84ae7b423237288}} 
+\index{alergias@{alergias}!es\_alergia\_reconocida@{es\_alergia\_reconocida}}
+\index{es\_alergia\_reconocida@{es\_alergia\_reconocida}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{es\_alergia\_reconocida()}{es\_alergia\_reconocida()}}
+{\footnotesize\ttfamily def alergias.\+es\+\_\+alergia\+\_\+reconocida (\begin{DoxyParamCaption}\item[{}]{nombre,  }\item[{}]{alergias\+\_\+conocidas }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función para verificar si una alergia es reconocida en la lista de alergias conocidas.
+
+Args:
+    nombre (str): Nombre de la alergia a verificar.
+    alergias_conocidas (list): Lista de alergias conocidas.
+
+Returns:
+    bool: True si la alergia es reconocida, False en caso contrario.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_a42313947a232c57826c45abac0147fd8}\label{namespacealergias_a42313947a232c57826c45abac0147fd8}} 
+\index{alergias@{alergias}!ingresar\_puntuacion\_general@{ingresar\_puntuacion\_general}}
+\index{ingresar\_puntuacion\_general@{ingresar\_puntuacion\_general}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{ingresar\_puntuacion\_general()}{ingresar\_puntuacion\_general()}}
+{\footnotesize\ttfamily def alergias.\+ingresar\+\_\+puntuacion\+\_\+general (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función para ingresar la puntuación general de alergias.
+
+Returns:
+    tuple: Una tupla que contiene la puntuación ingresada (int) y una lista de alergias específicas (list of Alergia objects).
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_a8b9b5e8de8e23f1309e1be71dbd53c55}\label{namespacealergias_a8b9b5e8de8e23f1309e1be71dbd53c55}} 
+\index{alergias@{alergias}!ingresar\_tipos\_alergias@{ingresar\_tipos\_alergias}}
+\index{ingresar\_tipos\_alergias@{ingresar\_tipos\_alergias}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{ingresar\_tipos\_alergias()}{ingresar\_tipos\_alergias()}}
+{\footnotesize\ttfamily def alergias.\+ingresar\+\_\+tipos\+\_\+alergias (\begin{DoxyParamCaption}\item[{}]{tipos\+\_\+alergias,  }\item[{}]{alergias\+\_\+conocidas }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función para ingresar tipos de alergias que tiene una persona.
+
+Args:
+    tipos_alergias (TiposDeAlergias): Instancia de TiposDeAlergias.
+    alergias_conocidas (list): Lista de alergias conocidas.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_af782547f6d2454de03bffa43f69037b4}\label{namespacealergias_af782547f6d2454de03bffa43f69037b4}} 
+\index{alergias@{alergias}!main@{main}}
+\index{main@{main}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily def alergias.\+main (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función principal que controla el flujo del programa.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_aaa801060d7367c27c8bab085f75de365}\label{namespacealergias_aaa801060d7367c27c8bab085f75de365}} 
+\index{alergias@{alergias}!medir\_tiempo@{medir\_tiempo}}
+\index{medir\_tiempo@{medir\_tiempo}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{medir\_tiempo()}{medir\_tiempo()}}
+{\footnotesize\ttfamily def alergias.\+medir\+\_\+tiempo (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función que mide el tiempo de ejecución de una función y devuelve el tiempo y el resultado de la función.
+
+Args:
+    func (function): Función a la que se le medirá el tiempo de ejecución.
+    *args: Argumentos adicionales para la función.
+
+Returns:
+    tuple: Una tupla que contiene el tiempo de ejecución (float) y el resultado de la función.
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_ae73bdb391df3030991b5416f6cfb040e}\label{namespacealergias_ae73bdb391df3030991b5416f6cfb040e}} 
+\index{alergias@{alergias}!mostrar\_evaluaciones\_combinadas@{mostrar\_evaluaciones\_combinadas}}
+\index{mostrar\_evaluaciones\_combinadas@{mostrar\_evaluaciones\_combinadas}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{mostrar\_evaluaciones\_combinadas()}{mostrar\_evaluaciones\_combinadas()}}
+{\footnotesize\ttfamily def alergias.\+mostrar\+\_\+evaluaciones\+\_\+combinadas (\begin{DoxyParamCaption}\item[{}]{puntuacion,  }\item[{}]{alergias\+\_\+especificas,  }\item[{}]{tipos\+\_\+alergias }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función para mostrar evaluaciones combinadas de alergias.
+
+Args:
+    puntuacion (int): Puntuación general de alergias.
+    alergias_especificas (list): Lista de alergias específicas.
+    tipos_alergias (TiposDeAlergias): Instancia de TiposDeAlergias.
+
+Returns:
+    None
+\end{DoxyVerb}
+ \mbox{\Hypertarget{namespacealergias_ad117493f0f2c62303c5873e426764116}\label{namespacealergias_ad117493f0f2c62303c5873e426764116}} 
+\index{alergias@{alergias}!perfilar@{perfilar}}
+\index{perfilar@{perfilar}!alergias@{alergias}}
+\doxysubsubsection{\texorpdfstring{perfilar()}{perfilar()}}
+{\footnotesize\ttfamily def alergias.\+perfilar (\begin{DoxyParamCaption}\item[{}]{func,  }\item[{$\ast$}]{args }\end{DoxyParamCaption})}
+
+\begin{DoxyVerb}Función que realiza el perfilado de una función y muestra las estadísticas de tiempo.
+
+Args:
+    func (function): Función que se perfilizará.
+    *args: Argumentos adicionales para la función.
+
+Returns:
+    Any: Resultado de la función.
+\end{DoxyVerb}
+ 
