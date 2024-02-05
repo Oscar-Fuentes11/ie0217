@@ -1,9 +1,7 @@
-# Makefile
-
 # Detectar el sistema operativo
 ifeq ($(OS),Windows_NT)
     EXECUTABLE = programa.exe
-    RM = del /Q
+    RM = powershell -Command Remove-Item
 else
     UNAME_S := $(shell uname -s)
     ifeq ($(UNAME_S),Linux)
@@ -26,17 +24,19 @@ SOURCES = $(wildcard $(SRC_DIR)/*.cpp)
 CXX = g++
 CXXFLAGS = -std=c++11 -Wall
 
-# Regla por defecto
-all: clean run
+# Regla por defecto que compila y luego ejecuta el programa
+all: $(EXECUTABLE)
+	@echo "Ejecutando el programa..."
+	@./$(EXECUTABLE)
 
 # Regla para compilar el programa
 $(EXECUTABLE): $(SOURCES)
 	$(CXX) $(CXXFLAGS) -o $@ $^
 
-# Regla para ejecutar el programa
-run: $(EXECUTABLE)
+# Regla para ejecutar el programa (opcional si se usa 'all' para ejecutar)
+run: 
 	./$(EXECUTABLE)
 
 # Regla para limpiar archivos generados
 clean:
-	$(RM) $(EXECUTABLE)
+	-$(RM) -Force $(EXECUTABLE)
