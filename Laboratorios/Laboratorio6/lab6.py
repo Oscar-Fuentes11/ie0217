@@ -79,7 +79,7 @@ print(f"Error cuadrático medio (MSE) en regresión lineal múltiple: {mse_multi
 from sklearn.preprocessing import PolynomialFeatures
 from sklearn.pipeline import make_pipeline
 
-#obtener los valores de la columna median_age (matriz de la columna) 
+#obtener los valores de la columna housing_median_age (matriz de una columna) 
 X_nonlinear = data['housing_median_age'].values.reshape(-1, 1)
 #obtener los valores de la columna media_house_values
 y_nonlinear = data['median_house_value'].values
