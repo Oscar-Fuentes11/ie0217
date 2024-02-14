@@ -27,10 +27,10 @@ api.authenticate()
 
 dataset_name = "akshaydattatraykhare/car-details-dataset"
 
-api.dataset_download_files(dataset_name, path='./src/carpetita', force=False, quiet=True, unzip=True)
+api.dataset_download_files(dataset_name, path='./src/INFOHERE', force=False, quiet=True, unzip=True)
 
 # Llamada a la función para cargar datos
-datos = cargar_datos("./src/carpetita/CAR DETAILS FROM CAR DEKHO.csv")
+datos = cargar_datos("./src/INFOHERE/CAR DETAILS FROM CAR DEKHO.csv")
 
 # Verificar que los datos se hayan cargado bien
 if datos is not None:
